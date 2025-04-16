@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <title>Ice Cream Options Catalog</title>
+    <meta name="description" content="A Catalog of Ice Cream Options" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
   </head>
 
   <body>
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+      <h1 class="title">Ice Cream Options</h1>
     </header>
+
+    <div class="controls">
+      <input type="text" id="searchBar" placeholder="Search Brands or Flavors..." />
+      <button onclick="sortByRating()">Sort by Rating</button>
+    </div>
+
     <div id="card-container"></div>
+
     <div class="card" style="display: none">
       <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
+        <h2>Ice Cream Title</h2>
+        <img src="" alt="Ice Cream" />
+        <ul class="card-info">
+          <li><strong>Brand:</strong> <span class="brand"></span></li>
+          <li><strong>Flavor:</strong> <span class="flavor"></span></li>
+          <li><strong>Rating:</strong> <span class="rating"></span></li>
         </ul>
       </div>
     </div>
+
     <div class="footer">
-      <button onclick="quoteAlert();">Get A Quote!</button>
+      <button onclick="quoteAlert();">Get A Sweet Message!</button>
       <button onclick="removeLastCard();">Remove A Card!</button>
     </div>
   </body>
